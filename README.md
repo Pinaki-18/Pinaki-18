@@ -1,140 +1,95 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=Pinaki%20Mishra&fontSize=42&fontColor=fff&animation=twinkling&fontAlignY=32&desc=Systems%20%7C%20AI%20%7C%20Backend&descAlignY=55&descSize=18" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=160&section=header&text=FITjob&fontSize=52&fontColor=fff&animation=twinkling&fontAlignY=36&desc=AI%20Resume%20Analyzer%20%7C%20Know%20Your%20Chances%20Before%20You%20Apply&descAlignY=58&descSize=15" width="100%"/>
 
 </div>
 
 <div align="center">
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=600&size=22&pause=1000&color=70A5FD&center=true&vCenter=true&width=600&lines=C%2B%2B+Systems+Developer;AI+%26+LLM+Integration;Problem+Solver+%7C+Builder;Always+Learning%2C+Always+Shipping+%F0%9F%9A%80)](https://git.io/typing-svg)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![Express](https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white)
+![Groq](https://img.shields.io/badge/Groq_LLaMA_3.3_70B-FF6B35?style=for-the-badge)
 
 </div>
 
 ---
 
-## 👨‍💻 About Me
+## 🎯 What is FITjob?
 
-```cpp
-class PinakiMishra {
-    string role     = "Aspiring Software Developer";
-    string location = "India";
-    
-    vector<string> stack  = {"C++", "Python", "SQL", "JavaScript", "Node.js"};
-    vector<string> focus  = {"Systems Programming", "AI Integration", "Algorithms"};
-    
-    string currently = "Building impactful projects & sharpening DSA";
-    string goal      = "Land my first software development role 🎯";
-};
-```
+**FITjob** is an AI-powered platform that helps IT professionals maximize their interview chances by analyzing how well their resume matches a job description — *before they apply.*
+
+> Everyone in IT faces the same problem — not getting interview calls. People waste time applying to jobs where their resume doesn't match the requirements at all. **FITjob fixes that.**
+
+---
+
+## ✨ Features
+
+| Feature | Description |
+|--------|-------------|
+| 📊 **ATS Match Score** | Know exactly how well your resume matches the JD (0–100%) |
+| 🔍 **Keyword Suggester** | AI finds missing keywords to boost your ATS ranking |
+| 💼 **Live Job Search** | Real matching jobs from 50+ portals instantly |
+| 📄 **PDF Upload** | Drag & drop resume upload with instant parsing |
+| 💡 **AI Suggestions** | Strengths, gaps & improvement recommendations |
+| 📱 **Responsive UI** | Works seamlessly on all devices |
 
 ---
 
 ## 🛠️ Tech Stack
 
-<div align="center">
-
-![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
-![SQLite](https://img.shields.io/badge/SQLite-07405E?style=for-the-badge&logo=sqlite&logoColor=white)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-
-</div>
+| Layer | Technology |
+|-------|-----------|
+| **Frontend** | React.js + Vite |
+| **Backend** | Node.js + Express |
+| **AI** | Groq AI (Llama 3.3 70B) |
+| **PDF Parsing** | pdf-parse |
+| **Job Search** | JSearch API (RapidAPI) |
 
 ---
 
-## 🚀 Featured Projects
+## 🚀 Run Locally
 
-<table>
-<tr>
-<td width="50%" valign="top">
+### Prerequisites
+- Node.js v18+
+- Groq API Key → [console.groq.com](https://console.groq.com) *(free)*
+- RapidAPI Key → [rapidapi.com](https://rapidapi.com) *(free)*
 
-### 🧠 Memory Allocator Visualizer
-[![Repo](https://img.shields.io/badge/View_Repo-181717?style=flat-square&logo=github)](https://github.com/Pinaki-18/Memory-Allocator-Visualizer-with-Web-Interface)
-![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white)
+### Backend Setup
 
-C++ memory allocator simulating **First-Fit, Best-Fit & Buddy System** with a real-time web visualization dashboard. Implements core OS memory management strategies from scratch.
+```bash
+cd server
+npm install
+```
 
-`Systems Programming` `Algorithms` `Web Visualization`
+Create a `.env` file in `/server`:
 
-</td>
-<td width="50%" valign="top">
+```env
+GROQ_API_KEY=your_groq_key
+RAPID_API_KEY=your_rapidapi_key
+PORT=5000
+```
 
-### 🤖 Jarvis AI Assistant
-[![Repo](https://img.shields.io/badge/View_Repo-181717?style=flat-square&logo=github)](https://github.com/Pinaki-18/jarvis-ai-assistant)
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+```bash
+node server.js
+```
 
-Python voice assistant powered by **Groq LLaMA AI** with speech recognition, news updates & music control. Real conversational AI with live API integration.
+### Frontend Setup
 
-`LLM Integration` `Speech Recognition` `Groq API`
+```bash
+cd client
+npm install
+npm run dev
+```
 
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-### 🅿️ SmartParking System
-[![Repo](https://img.shields.io/badge/View_Repo-181717?style=flat-square&logo=github)](https://github.com/Pinaki-18/SmartParking)
-![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white)
-
-C++ smart parking system using **Dijkstra's algorithm**, multi-threading, SQLite persistence & a live web dashboard. Real-world problem solved with CS fundamentals.
-
-`Graph Algorithms` `Multithreading` `SQLite`
-
-</td>
-<td width="50%" valign="top">
-
-### 📄 Job Align AI
-[![Repo](https://img.shields.io/badge/View_Repo-181717?style=flat-square&logo=github)](https://github.com/Pinaki-18/job-align-ai)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
-
-AI-powered **Resume Scanner** built with Node.js and Google Gemini. Analyzes resumes against job descriptions to surface skill gaps and alignment scores.
-
-`Node.js` `Google Gemini` `AI` `NLP`
-
-</td>
-</tr>
-</table>
+Open [http://localhost:3000](http://localhost:3000) 🎉
 
 ---
 
-## 📊 GitHub Stats
+## 👨‍💻 Built By
 
-<div align="center">
-
-<img src="https://github-readme-stats.vercel.app/api?username=Pinaki-18&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=70A5FD&icon_color=BF91F3&text_color=C9D1D9" width="48%" />
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Pinaki-18&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=70A5FD&text_color=C9D1D9" width="40%" />
-
-</div>
-
-<div align="center">
-
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=Pinaki-18&theme=tokyonight&hide_border=true&background=0D1117&stroke=70A5FD&ring=BF91F3&fire=FF6B6B&currStreakLabel=70A5FD" width="55%"/>
-
-</div>
-
----
-
-## 🏆 GitHub Trophies
-
-<div align="center">
-
-![Trophies](https://github-profile-trophy.vercel.app/?username=Pinaki-18&theme=tokyonight&no-frame=true&no-bg=true&margin-w=4&row=1)
-
-</div>
-
----
-
-## 📫 Let's Connect
-
-<div align="center">
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/pinaki18mishra)
-[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:pinakimishra7690@gmail.com)
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Pinaki-18)
-
-</div>
+**Pinaki Mishra** — [GitHub](https://github.com/Pinaki-18)
 
 <div align="center">
 
